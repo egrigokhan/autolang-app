@@ -1,0 +1,27 @@
+{
+  "inputs": [
+    {
+      "key": "OPENAI_API_KEY",
+      "title": "OpenAI API Key",
+      "description": "Your OpenAI API Key",
+      "type": "string",
+      "secure": true
+    },
+    {
+      "key": "SERPER_API_KEY",
+      "title": "Google Search API Key",
+      "description": "Your Google Search API Key",
+      "type": "string",
+      "secure": true,
+      "optional": true
+    },
+    {
+      "key": "WOLFRAM_ALPHA_APPID",
+      "title": "Wolfram Alpha App ID",
+      "description": "Your Wolfram Alpha App ID",
+      "type": "string",
+      "secure": true,
+      "optional": true
+    }
+  ]
+}
