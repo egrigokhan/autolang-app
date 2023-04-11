@@ -27,7 +27,7 @@ def run_(message, history):
    tool_names = ["terminal", "requests", "python_repl", "human", "google-serper", "wolfram-alpha"]
    """
 
-    tool_names = ["python_repl", "terminal", "requests"]
+    tool_names = ["python_repl", "terminal"]
 
     try:
         os.environ["WOLFRAM_ALPHA_APPID"]
@@ -48,6 +48,6 @@ def run_(message, history):
     vectorstore = FAISS(embeddings.embed_query, index, docstore, {})
 
     agent = AutoAgent.from_llm_and_objectives(
-        llm, objective, tools, vectorstore, verbose=True)
+        llm, objective, tools, vectorstore, verbose=False)
 
     return agent.run()
