@@ -50,4 +50,4 @@ def run_(message, history):
     agent = AutoAgent.from_llm_and_objectives(
         llm, objective, tools, vectorstore, verbose=False)
 
-    return agent.run()
+    return agent.run(max_iterations=int(os.environ["max_iterations"]))

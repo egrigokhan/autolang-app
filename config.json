@@ -22,6 +22,13 @@
       "type": "string",
       "secure": true,
       "optional": true
+    },
+    {
+      "key": "max_iterations",
+      "title": "Max Iterations",
+      "description": "The maximum number of iterations to run the model for",
+      "type": "number",
+      "optional": true
     }
   ]
 }

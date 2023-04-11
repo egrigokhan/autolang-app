@@ -35,6 +35,7 @@ def run(message, history):
 
 def setup(config):
     os.environ["OPENAI_API_KEY"] = config["OPENAI_API_KEY"]
+    os.environ["max_iterations"] = config["max_iterations"] if "max_iterations" in config else None
     try:
         os.environ["WOLFRAM_ALPHA_APPID"] = config["WOLFRAM_ALPHA_APPID"]
     except:
